@@ -41,7 +41,8 @@ body {
     font-family: 'Trebuchet MS Regular', 'Trebuchet MS Bold', 'Exo 2', Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-size: cover;
-    background: url('../img/2880px.jpg') no-repeat;
+    background: url('../img/pattern_small.jpg') repeat;
+    /* background: url('../img/2880px.jpg') no-repeat; */
     /* background: url('../img/big_background.jpg') center center no-repeat; */
     /* height: 100vh; */
     /* background: url('../img/background.jpg') center center no-repeat; */
@@ -296,18 +297,21 @@ li {
         position: absolute;
         top: 40px;
         padding: 0px 10%;
+        padding-bottom: 50px;
     }
 }
 
 @media (max-width: 1024px) {
     body {
         padding-bottom: 0px;
-        background: url('../img/middle_background1024.jpg') repeat;
+        background: url('../img/pattern_small.jpg') repeat;
+        /* background: url('../img/middle_background1024.jpg') repeat; */
     }
     section.cards {
         padding: 0px 10%;
         position: absolute;
         top: 50px;
+        padding-bottom: 50px;
         /* padding: 50px 10%; */
     }
     .cards__wrapper {
@@ -321,22 +325,29 @@ li {
         top: 50px;
         padding: 0px 5%;
         margin: 0px 0;
+        padding-bottom: 50px;
         /* height: calc(100vh - 6%); */
     }
 }
 
 @media (max-width: 899px) {
     body {
-        padding-bottom: 25px;
-        background: url('../img/2880px.jpg') repeat;
+        background: url('../img/pattern_small.jpg') repeat;
+        /* padding-bottom: 25px; */
+        /* background: url('../img/2880px.jpg') repeat; */
         /* background: url('../img/big_background.jpg') center center no-repeat; */
+    }
+    section.cards {
+        padding-bottom: 50px;
+        /* height: calc(100vh - 6%); */
     }
 }
 
 @media (max-width: 820px) {
     body {
         padding-bottom: 0px;
-        background: url('../img/background.jpg') repeat;
+        background: url('../img/pattern_small.jpg') repeat;
+        /* background: url('../img/background.jpg') repeat; */
     }
     section.cards {
         padding: 0px 3%;
@@ -361,9 +372,9 @@ li {
     section.cards {
         width: 100%;
         padding: 50px 6%;
-        padding-bottom: 60px;
         margin: 0px 0;
         padding-top: 0;
+        padding-bottom: 60px;
         /* height: calc(100vh - 6%); */
     }
 }
@@ -373,8 +384,8 @@ li {
         width: 100%;
         padding: 50px 4%;
         margin: 0px 0;
-        padding-bottom: 60px;
         padding-top: 0;
+        padding-bottom: 60px;
         /* height: calc(100vh - 4%); */
     }
 }
@@ -391,6 +402,7 @@ li {
 @media (min-width: 3840px) {
     body {
         padding-bottom: 20px;
-        background: url('../img/big_background.jpg') center center no-repeat;
+        background: url('../img/pattern_small.jpg') repeat;
+        /* background: url('../img/big_background.jpg') center center no-repeat; */
     }
 }
