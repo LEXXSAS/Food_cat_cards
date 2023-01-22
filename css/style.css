@@ -294,7 +294,7 @@ li {
 @media (max-width: 1440px) {
     section.cards {
         position: absolute;
-        top: 50px;
+        top: 40px;
         padding: 0px 10%;
     }
 }
@@ -350,11 +350,11 @@ li {
     }
 }
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
     body {
         background: url('../img/phone_size430.png') no-repeat;
     }
-}
+} */
 
 
 @media (max-width: 401px) {
@@ -363,6 +363,7 @@ li {
         padding: 50px 6%;
         padding-bottom: 60px;
         margin: 0px 0;
+        padding-top: 0;
         /* height: calc(100vh - 6%); */
     }
 }
@@ -373,6 +374,7 @@ li {
         padding: 50px 4%;
         margin: 0px 0;
         padding-bottom: 60px;
+        padding-top: 0;
         /* height: calc(100vh - 4%); */
     }
 }
@@ -381,6 +383,7 @@ li {
     section.cards {
         width: 100%;
         padding: 25px 0%;
+        padding-top: 0;
         /* height: calc(100vh - 0%); */
     }
 }
