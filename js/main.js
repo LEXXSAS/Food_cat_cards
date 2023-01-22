@@ -1,3 +1,6 @@
+document.querySelectorAll("a[href='#']").forEach(el => {
+   el.addEventListener('click', (el) => el.preventDefault());})
+
 let array = [
    {'id:': 0, 'eat': 'Печень утки разварная с артишоками.'},
    {'id:': 1, 'eat': 'Головы щучьи с чесноком да свежайшая сёмгушка.'},
@@ -133,7 +136,26 @@ function selectedOnlink(event) {
 
             }
             
-          }
+         }
+
+         function disableAuto() {
+            setTimeout(() => {
+             if (eatWeight.classList.contains('eat-weight--selected')) {
+               eatWeight.classList.add('eat-weight--disabled');
+               cardsSvgTwo.classList.add('cards-svg__two--disabled');
+               eatWeight.classList.remove('eat-weight--selected');
+               cardsSvgTwo.classList.remove('cards-svg__two--selected');
+               figCaptureSpan.innerText = newArray[dataSet].eat;
+               figCaptureSpan.style.color = '#FFFF66'
+            }
+             }, 1450);
+
+         }
+
+         document.addEventListener('touchmove', touchMove);
+         function touchMove() {
+            disableAuto();
+         }
 
          figCaptureSpan.innerText = array[dataSet].eat;
       } 
