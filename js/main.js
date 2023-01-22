@@ -43,26 +43,21 @@ function selectedOnlink(event) {
       eatWeight.classList.add('eat-weight--selected');
       cardsSvgTwo.classList.add('cards-svg__two--selected');
 
-      curCardContainerLink.addEventListener('mouseleave', disabledAdd);
-      function disabledAdd(event) {
-         let target = event.target;
-         
-         if (!eatWeight.classList.contains('eat-weight--selected'))  {
-            curCardContainerLink.removeEventListener('mouseleave', disabledAdd);
-            
-         } else if (target.closest('path') || target.classList.contains('cards-svg__two') || target.classList.contains('cards__container-link')) {
-            
-            setTimeout(() => {
-               eatWeight.classList.add('eat-weight--disabled');
-               cardsSvgTwo.classList.add('cards-svg__two--disabled');
-               eatWeight.classList.remove('eat-weight--selected');
-               cardsSvgTwo.classList.remove('cards-svg__two--selected');
-               figCaptureSpan.innerText = newArray[dataSet].eat;
-               figCaptureSpan.style.color = '#FFFF66'
-            }, 1450);
+      function disableAuto() {
+               setTimeout(() => {
+                if (eatWeight.classList.contains('eat-weight--selected')) {
+                  eatWeight.classList.add('eat-weight--disabled');
+                  cardsSvgTwo.classList.add('cards-svg__two--disabled');
+                  eatWeight.classList.remove('eat-weight--selected');
+                  cardsSvgTwo.classList.remove('cards-svg__two--selected');
+                  figCaptureSpan.innerText = newArray[dataSet].eat;
+                  figCaptureSpan.style.color = '#FFFF66'
+               }
+                }, 1450);
 
-         }
       }
+
+      disableAuto()
       
    }
   
