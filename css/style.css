@@ -406,3 +406,34 @@ li {
         /* background: url('../img/big_background.jpg') center center no-repeat; */
     }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body {
+        background: url('../img/pattern_small.jpg');
+        background-repeat: repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto;
+        box-sizing: border-box;
+    }
+    
+    .cards__container .cards-svg__one {
+        fill: #F2F2F2;
+    }
+    .cards-svg__two {
+        color: #2EA8E6;
+    }
+    .cards__container {
+        margin-bottom: 50px;
+    }
+    .figcapture-span {
+        color:#FFFFFF;
+    }
+    .figcapture__link-two {
+        color: #2EA8E6;
+        border-bottom: 2px dashed #2EA8E6;
+    }
+    .cards__title-h1 {
+        color: #FFFFFF;
+    }
+}
